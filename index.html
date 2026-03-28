@@ -140,6 +140,41 @@
       opacity: 0.85;
     }
 
+    /* ── Verse ── */
+    .verse {
+      margin: 2rem auto 0;
+      max-width: 420px;
+      border-left: 2px solid rgba(201, 160, 163, 0.4);
+      padding-left: 1.25rem;
+      text-align: left;
+    }
+
+    .verse p {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-weight: 300;
+      font-size: clamp(0.88rem, 2.4vw, 1rem);
+      line-height: 1.75;
+      color: #6B4B4B;
+      margin-bottom: 0.6rem;
+    }
+
+    .verse cite {
+      display: block;
+      font-family: 'Lato', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 300;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #C9A0A3;
+      font-style: normal;
+    }
+
+    .verse cite .translation {
+      opacity: 0.7;
+      margin-left: 0.3em;
+    }
+
     /* ── Fade in ── */
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(16px); }
@@ -176,6 +211,11 @@
       Faith-filled birth support for Christian families<br>
       in North Texas
     </p>
+
+    <blockquote class="verse">
+      <p>"You made all the delicate, inner parts of my body and knit me together in my mother's womb. Thank you for making me so wonderfully complex! Your workmanship is marvelous—how well I know it."</p>
+      <cite>Psalm 139:13–14 <span class="translation">NLT</span></cite>
+    </blockquote>
 
   </div>
 </body>
